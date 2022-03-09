@@ -5,19 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        div{
+            border: 1px solid orange;
+            padding: 20px;
+            margin: 10px;
+        }
+
+    </style>
 </head>
 <body>
+    <H1 id="gros_titre"> les evenements</H1>
+    <div id="div1">
+        <p id="p1">1 exemple plus <strong> complexe</strong></p>
+    </div>
+
         <script>
-            var primitive = " je suis une valeur primitive";
-            var long_prim = primitive.length
-            var type_prim = typeof(primitive);
-            var aj_prim = primitive.toUpperCase();
-            var chaine = new String('je suis un objet');
-            var type_chaine = typeof(chaine);
-            alert(type_prim)
-            alert(type_chaine)
-            alert(long_prim)
-            alert(aj_prim)
+
+            var div1 = document.getElementById('div1');
+            var p1 = document.getElementById('p1');
+
+            div1.addEventListener('click',Message, true)
+            p1.addEventListener('click', TexteP, true)
+
+            function Message(e){
+                alert('stop à la propagation')
+                e.stopPropagation();
+            }
+
+            function TexteP(){
+                alert('ceci ne s\'affichera pas')
+            }
+
         </script>
 </body>
 </html>
