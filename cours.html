@@ -1,42 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="/app.js"></script>
+    <script
+      src="https://kit.fontawesome.com/8abccc4129.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Document</title>
-    <style>
-        div{
-            border: 1px solid orange;
-            padding: 20px;
-            margin: 10px;
-        }
+  </head>
+  <body>
+    <div class="menu">
+      <ul class="UlMenu">
+        <div>
+          <li><a href="" class="fab fa-facebook"></a></li>
+        </div>
+        <div class="cercle">
+          <li><a href="" class="fas fa-home"></a></li>
+        </div>
+        <div class="cercle">
+          <li><a href="" class="fas fa-search"></a></li>
+        </div>
+        <div class="cercle">
+          <li><a href="" class="fas fa-bell"></a></li>
+        </div>
+        <div class="cercle">
+          <li><a href="" class="fab fa-facebook-messenger"></a></li>
+        </div>
+        <div class="cercle">
+          <li>
+            <a href=""
+              ><i class="fas fa-ellipsis-v"></i><i class="fas fa-ellipsis-v"></i
+              ><i class="fas fa-ellipsis-v"></i
+            ></a>
+          </li>
+        </div>
 
-    </style>
-</head>
-<body>
-    <H1 id="gros_titre"> les evenements</H1>
-    <div id="div1">
-        <p id="p1">1 exemple plus <strong> complexe</strong></p>
+        <hr />
+        <li><a href="" class="fab fa-youtube"></a></li>
+        <li><a href="" class="fas fa-store"></a></li>
+        <div class="cercleUser"><a href="" class="fas fa-users"></a></div>
+
+        <div class="groups">
+          <a href=""><img src="/Pictures/portrait4.jpg" alt="" /></a>
+        </div>
+        <div class="groups">
+          <a href=""><img src="/Pictures/portrait5.jpg" alt="" /></a>
+        </div>
+        <div class="groups">
+          <a href=""><img src="/Pictures/portrait6.jpg" alt="" /></a>
+        </div>
+        <div class="groups">
+          <a href=""><img src="/Pictures/portrait7.jpg" alt="" /></a>
+        </div>
+        <div class="cercle"><a href="" class="fas fa-ellipsis-h"></a></div>
+        <div class="cercleCompte"><img src="/Pictures/id.jpg" alt="" /></div>
+      </ul>
     </div>
+    <div class="SousMenu"></div>
 
-        <script>
+    <div class="contenu"></div>
 
-            var div1 = document.getElementById('div1');
-            var p1 = document.getElementById('p1');
-
-            div1.addEventListener('click',Message, true)
-            p1.addEventListener('click', TexteP, true)
-
-            function Message(e){
-                alert('stop à la propagation')
-                e.stopPropagation();
-            }
-
-            function TexteP(){
-                alert('ceci ne s\'affichera pas')
-            }
-
-        </script>
-</body>
+    <div class="right"></div>
+  </body>
 </html>
